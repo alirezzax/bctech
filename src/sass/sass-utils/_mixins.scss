@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use './variables' as *;
+
+/**** MediaQuery Mixins ****/
+// desktop first
+@mixin sm {
+    @media only screen and (max-width: map.get($breakpoints, 'sm')) {
+        @content;
+    }
+}
+@mixin md {
+    @media only screen and (max-width: map.get($breakpoints, 'md')) {
+        @content;
+    }
+}
+@mixin mq($width: 0) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
