@@ -1,0 +1,50 @@
+@use 'sass:map';
+@use '../sass-utils/variables' as *;
+
+$utilities: (
+    "display": (
+        "prefix": "display",
+        "values": (
+            "none": none,
+            "block": block,
+            "inline": inline,
+            "inline-block": inline-block,
+            "flex": flex,
+            "grid": grid,
+        ),
+    ),
+    "justify-content": (
+        "prefix": "justify",
+        "values": (
+            "center": center,
+            "flex-start": flex-start,
+            "flex-end": flex-end,
+            "space-between": space-between,
+            "space-around": space-around
+        ),
+    ),
+    "margin-inline": (
+        "prefix": "push",
+        "values": (
+            "center": auto,
+            "left": 0 auto,
+            "right": auto 0,
+        ),
+    ),
+    "background-color": (
+        "prefix": "bg",
+        "values": $bg-colors,
+    ),
+    
+);
+
+@each $property, $map in $utilities {
+    $prefix: map.get($map, 'prefix');
+    $values: map.get($map, 'values');
+    @each $k, $v in $values {
+        .#{$prefix}-#{$k} {
+            #{$property}: $v;
+        }
+    }
+}
+

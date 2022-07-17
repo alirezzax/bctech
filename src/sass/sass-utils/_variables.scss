@@ -1,12 +1,7 @@
 /****  Theme Colors  ****/
 $bg-colors: (
     "primary": #00e6a8,
-    "400": #0b1411,
-    "500": #081b17,
-    "600": #09251e,
-    "700": #092225,
-    "800": #0a161a,
-    "900": #0D0D0D,
+    "body": #0D0D0D,
 );
 
 $text-colors: (
@@ -23,7 +18,7 @@ $breakpoints: (
     "md": 1024px,
 );
 
-/**** Grid System Columns ****/
+/**** Grid System ****/
 $grid-columns: 12;
 
 /**** Font Sizes ****/
@@ -42,4 +37,13 @@ $font-sizes: (
         "h2": 3.2rem,
         "h3": 1.8rem,
     )
+);
+
+/**** Font Weights ****/
+$font-weights: (
+    "400": 400,
+    "500": 500,
+    "700": 700,
+    "800": 800,
+
 );
