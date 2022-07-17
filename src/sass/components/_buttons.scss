@@ -1,0 +1,62 @@
+@use 'sass:map';
+@use '../base/typography' as *;
+@use '../sass-utils/' as *;
+
+.button {
+    @extend .fs-400;
+    display: block;
+    width: 318px;
+    height: 70px;
+    line-height: 70px;
+    background-color: transparent;
+    color: map.get($text-colors, '100');
+    text-align: center;
+    padding-inline: 1rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid transparent;
+    outline: 1px solid rgba($color-primary, .5);
+    outline-offset: 0px;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    @include sm {
+        width: 201px;
+        height: 63px;
+        line-height: 63px;
+    }
+
+    &:hover {
+        border-color: $color-primary;
+        box-shadow: inset 0 0 20px rgba($color-primary, .5), 0 0 20px rgba($color-primary, .2);
+        outline-color: rgba($color-primary, 0);
+        outline-offset: 15px;
+    }
+
+    /*** call to action button ***/
+    &[data-type="cta"] {
+        background-color: $color-primary;
+        color: #181818;
+        overflow: unset;
+
+        &::after {
+            content: ' ';
+            display: block;
+            width: calc(100% + 2rem);
+            height: 36px;
+            margin: -2.5rem 0 0 -1rem;
+            background: #00E3A5;
+            opacity: 0.4;
+            filter: blur(20px);
+            border-radius: 8px;
+            z-index: -1;
+
+            @include sm {
+                height: 30px;
+            }
+        }
+    }
+
+}

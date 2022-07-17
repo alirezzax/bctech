@@ -1,11 +1,13 @@
 /****  Theme Colors  ****/
+$color-primary: #00e6a8;
+
 $bg-colors: (
-    "primary": #00e6a8,
+    "primary": $color-primary,
     "body": #0D0D0D,
 );
 
 $text-colors: (
-    "primary": #00e6a8,
+    "primary": $color-primary,
     "100": #ffffff,
     "300": #f6fbf3,
     "500": #82ab9f,
