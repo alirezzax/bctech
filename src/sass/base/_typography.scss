@@ -1,0 +1,129 @@
+@use 'sass:map';
+@use '../sass-utils/' as *;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-ExtraBold.woff2") format("woff2"),
+  url("./fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Bold.woff2") format("woff2"),
+  url("./fonts/Gilroy-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Medium.woff2") format("woff2"),
+  url("./fonts/Gilroy-Medium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
+html {
+  //simpilify rem unit calculation (62.5% * 16px = 10px)
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Gilroy", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-weight: 700;
+}
+
+
+a {
+  text-decoration: none;
+  color: map.get($text-colors, "primary" );
+}
+
+p:not([class]),
+ul:not([class]),
+li:not([class]) {
+  max-width: 60ch;
+}
+
+h1,
+.h1 {
+  font-size: map.get(map.get($font-sizes, "desktop"), 'h1');
+  line-height: 1.2;
+}
+
+h2,
+.h2 {
+  font-size: map.get(map.get($font-sizes, "desktop"), 'h2');
+}
+
+h3,
+.h3 {
+  font-size: map.get(map.get($font-sizes, "desktop"), 'h3');
+}
+
+.fs-400 {
+  font-size: map.get(map.get($font-sizes, "desktop"), '400');
+}
+
+.fs-300 {
+  font-size: map.get(map.get($font-sizes, "desktop"), '300');
+}
+
+@include sm {
+  h1,
+  .h1 {
+    font-size: map.get(map.get($font-sizes, 'mobile'), 'h1');
+    line-height: 1.5;
+  }
+  h2,
+  .h2 {
+    font-size: map.get(map.get($font-sizes, 'mobile'), 'h2');
+  }
+
+  h3,
+  .h3 {
+    font-size: map.get(map.get($font-sizes, 'mobile'), 'h3');
+  }
+
+  .fs-400 {
+    font-size: map.get(map.get($font-sizes, 'mobile'), '400');
+  }
+
+  .fs-300 {
+    font-size: map.get(map.get($font-sizes, 'mobile'), '300');
+  }
+}
+
+@each $k, $v in $text-colors {
+  .color-#{$k} {
+    color: $v;
+  }
+}
+
+@each $k, $v in $font-weights {
+  .fw-#{$k} {
+    font-weight: $v;
+  }
+}
+
+article {
+  @extend .fw-400;
+  @extend .fs-400;
+}
