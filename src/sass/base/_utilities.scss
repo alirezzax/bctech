@@ -23,6 +23,15 @@ $utilities: (
             "space-around": space-around
         ),
     ),
+    "align-items": (
+        "prefix": "align",
+        "values": (
+            "center": center,
+            "flex-start": flex-start,
+            "flex-end": flex-end,
+            "stretch": stretch,
+        ),
+    ),
     "margin-inline": (
         "prefix": "push",
         "values": (
