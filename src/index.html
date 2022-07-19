@@ -10,8 +10,56 @@
     <script type="module" src="index.js"></script>
 </head>
 
-<body>
+<body class="bg-body">
+    <!--------------------
+            HEADER
+    ---------------------->
+    <header class="site-header">
+        <div class="row justify-space-between align-center">
+            <!-- mobile navbar toggle button -->
+            <button class="navbar-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- site logo -->
+            <div class="[ site-header__logo ] [ color-100 ]">
+                B<span class="color-primary">.</span>CTech
+            </div>
 
+            <!-- top navbar -->
+            <nav class="[ site-header__navbar ] [ display-flex align-center ]">
+                <ul class="[ navlist ] [ display-flex ] [ fs-300 fw-500 ]" role="list">
+                    <li>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#">About us</a>
+                    </li>
+                    <li>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#">Services</a>
+                    </li>
+                    <li>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#">How it works</a>
+                    </li>
+                    <li>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#">community</a>
+                    </li>
+                    <li>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- user area button  -->
+            <a class="[ site-header__button ] [ button ]" href="#">
+                Join for free
+            </a>
+            <a class="site-header__icon-btn" href="#">
+                <svg class="icon">
+                    <use href="./assets/sprite.svg#user"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>

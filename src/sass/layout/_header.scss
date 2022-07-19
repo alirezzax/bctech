@@ -1,0 +1,192 @@
+@use '../sass-utils/' as *;
+
+.site-header {
+    width: calc(100% - 5rem);
+    background: rgba(9, 37, 30, 0.3);
+    border-radius: 100px;
+    padding: 40px 80px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__logo {
+        font-size: 4.5rem;
+
+        @include md {
+            font-size: 3.2rem;
+        }
+    }
+
+    &__navbar {
+        margin-right: 100px;
+
+        @include mq(1400px) {
+            margin-right: 40px;
+        }
+    }
+
+    &__button {
+        width: 200px;
+
+        @include mq(1200px) {
+            display: none;
+        }
+    }
+
+    &__icon-btn {
+        padding: 0;
+        display: none;
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            fill: $color-primary;
+        }
+
+        @include mq(1200px) {
+            display: block;
+        }
+    }
+
+
+    @include md {
+        width: 100%;
+        padding: 30px 20px;
+        top: 0;
+        background: linear-gradient(180deg, #000, transparent);
+        border-radius: 0;
+
+        &__navbar {
+            position: absolute;
+            left: 0px;
+            top: 108px;
+            height: calc(100vh - 108px);
+            width: 100%;
+            max-width: 0;
+            align-items: flex-start;
+            background: rgba(0, 0, 0, 0.99);
+            border-radius: 0 10px 10px 0;
+            padding-block: 1rem;
+            padding-inline: 0rem;
+            overflow: hidden;
+            transition: all 0.4s ease-in-out;
+            z-index: 9999;
+
+            &.open {
+                max-width: 500px;
+                padding-inline: 2rem;
+            }
+
+        }
+    }
+
+}
+
+/**** Top Menu ****/
+.navlist {
+    gap: 50px;
+    margin-top: 9px;
+
+    @include mq(1400px) {
+        gap: 30px;
+    }
+
+    @include md {
+        flex-direction: column;
+        gap: 1.5rem;
+        white-space: nowrap;
+    }
+
+    &__item {
+        transition: all 0.4s ease-in;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 4px;
+            background-color: $color-primary;
+            transition: all 0.5s ease-in-out;
+            margin-top: 5px;
+            border-radius: 2px;
+        }
+
+        &.active,
+        &:hover {
+            color: $color-primary;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.navbar-toggle-btn {
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        background-color: $color-primary;
+        height: 4px;
+        display: block;
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 24px;
+        transition: all 0.5s ease-in-out;
+
+        &:nth-child(1) {
+            margin-left: auto;
+        }
+
+        &:nth-child(2) {
+            width: 20px;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 10px;
+                background-color: $color-primary;
+                height: 4px;
+                border-radius: 10px;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            margin-right: auto;
+        }
+    }
+
+    &.close {
+        span {
+            width: 100%;
+
+            &:nth-child(1) {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(-9px) rotate(-45deg);
+            }
+        }
+    }
+
+    @include md {
+        display: block;
+    }
+}
