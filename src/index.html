@@ -11,9 +11,7 @@
 </head>
 
 <body class="bg-body">
-    <!--------------------
-            HEADER
-    ---------------------->
+    <!--------- HEADER --------->
     <header class="site-header">
         <div class="row justify-space-between align-center">
             <!-- mobile navbar toggle button -->
@@ -53,11 +51,38 @@
             </a>
             <a class="site-header__icon-btn" href="#">
                 <svg class="icon">
-                    <use href="./assets/sprite.svg#user"></use>
+                    <use href="./assets/icon/sprite.svg#user"></use>
                 </svg>
             </a>
         </div>
     </header>
+    <!--------- HERO SECTION --------->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <p class="[ hero__subtitle ] [ color-500 ]">Build the Future with</p>
+                    <h1 class="[ hero__title ] [ color-300 ]">Blockchain technology and Currency</h1>
+                    <button type="button" class="[ hero__cta ] [ button ]" data-type="cta">
+                        Get Whitepaper
+                    </button>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./assets/images/city.webp 1x, ./assets/images/city@2x.webp 2x"
+                        />
+                        <source
+                          type="image/png"
+                          srcset="./assets/images/city.png 1x, ./assets/images/city@2x.png 2x"
+                        />
+                        <img src="./assets/images/city.png" alt="" />
+                      </picture>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script type="module" src="./index.js"></script>
 </body>

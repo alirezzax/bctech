@@ -1,0 +1,55 @@
+@use '../sass-utils/' as *;
+
+.hero {
+    background-image: url('./assets/images/background/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-block: 300px 100px;
+    @media screen and (min-width: 1024px) {
+        & {
+            min-height: 100vh;
+        }
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        inset: 0;
+        background-image: url('./assets/images/background/hero-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    &__subtitle {
+        font-size: 2.8rem;
+
+        @include sm {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__title {
+        margin-top: 18px;
+    }
+
+    &__cta {
+        margin-top: 72px;
+    }
+
+    @include md {
+        padding-block: 170px 100px;
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+        &__cta {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
