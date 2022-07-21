@@ -1,0 +1,73 @@
+@use '../sass-utils/' as *;
+
+.achievements {
+    text-align: center;
+
+    h2 {
+        margin-top: 8px;
+    }
+
+    &__subtitle {
+        font-size: 2.4rem;
+
+        @include sm {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__stats {
+        max-width: 736px;
+        margin-inline: auto;
+        margin-top: 40px;
+
+        &__item {
+            z-index: 1;
+
+            &__number {
+                font-size: 3.6rem;
+
+                @include sm {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+
+    &__picture {
+        margin-top: -70px;
+
+        @include sm {
+            margin-top: -20px;
+        }
+    }
+
+    @include md {
+        padding-top: 70px;
+    }
+}
+
+
+.companies {
+    width: 100%;
+    background: rgba(#091D18, 0.5);
+    border-radius: 150px;
+    padding: 80px 60px;
+    margin-block: 100px;
+    gap: 1.5rem;
+
+    @include sm {
+        padding: 40px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    &__picture {
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+    }
+
+}
