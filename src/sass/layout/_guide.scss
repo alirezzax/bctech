@@ -1,0 +1,137 @@
+@use '../sass-utils/' as *;
+
+.guide {
+    margin-block: 5rem;
+    background: rgba(#0A1619, 0.4);
+    padding-block: 80px 100px;
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 60px;
+        padding-inline-start: 2rem;
+    }
+
+    &__step {
+        width: calc(100% - 2rem);
+        background: rgba(0, 221, 156, 0.03);
+        border-radius: 220px 0 0 220px;
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        padding: 42px 70px;
+        gap: 15px;
+        position: relative;
+        overflow: hidden;
+
+        &__bg {
+            position: absolute;
+            height: 150%;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        &.push-left {
+            border-radius: 0 220px 220px 0;
+            flex-direction: row-reverse;
+
+            p {
+                text-align: justify;
+            }
+
+            img {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+
+        &__number {
+            font-size: 129px;
+            color: #0c1716;
+            text-shadow: 0 0 3px #51b395;
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: 500px;
+        }
+
+
+        &__icon {
+            width: 100%;
+            height: 100%;
+            max-width: 96px;
+            max-height: 96px;
+            fill: #00E3A5;
+        }
+
+        @media screen and (min-width: 1300px) {
+            & {
+                --space: calc((100% - 1300px) / 2);
+                width: calc(100% - var(--space));
+                padding-right: var(--space);
+            }
+
+            &.push-left {
+                padding-right: 5rem;
+                padding-left: var(--space);
+            }
+        }
+
+        @include sm {
+            display: grid;
+            grid-template-columns: 1fr 50px;
+            border-radius: 80px 0 0 80px;
+            padding: 40px 40px;
+
+            &.push-left {
+                border-radius: 0 80px 80px 0;
+                grid-template-columns: 50px 1fr;
+                grid-template-rows: auto auto;
+                grid-template-areas:
+                    "a b"
+                    "c d";
+
+                span {
+                    grid-area: b;
+                    text-align: right;
+                }
+
+                div {
+                    grid-area: d;
+                }
+
+                .icon {
+                    grid-area: c;
+                }
+
+                h2 {
+                    text-align: left;
+                }
+
+                p {
+                    text-align: left;
+                }
+
+
+            }
+
+            &__number {
+                grid-column: 1 / span 2;
+                font-size: 35px;
+            }
+        }
+    }
+
+    &__button {
+        margin: 90px auto 0;
+    }
+
+    @include md {
+        margin-top: 12rem;
+    }
+}

@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-body">
-    <!--------- HEADER --------->
+    <!--------- Header --------->
     <header class="site-header">
         <div class="row justify-space-between align-center">
             <!-- mobile navbar toggle button -->
@@ -46,7 +46,7 @@
                 </ul>
             </nav>
             <!-- user area button  -->
-            <a class="[ site-header__button ] [ button ]" href="#">
+            <a class="[ site-header__button button ]" href="#">
                 Join for free
             </a>
             <a class="site-header__icon-btn" href="#">
@@ -56,14 +56,14 @@
             </a>
         </div>
     </header>
-    <!--------- HERO SECTION --------->
+    <!--------- Hero Section --------->
     <section class="hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <p class="[ hero__subtitle ] [ color-500 ]">Build the Future with</p>
                     <h1 class="[ hero__title ] [ color-300 ]">Blockchain technology and Currency</h1>
-                    <button type="button" class="[ hero__cta ] [ button ]" data-type="cta">
+                    <button type="button" class="[ hero__cta button ]" data-type="cta">
                         Get Whitepaper
                     </button>
                 </div>
@@ -78,7 +78,7 @@
             </div>
         </div>
     </section>
-    <!--------- ACHIEVEMENTS SECTION --------->
+    <!--------- Achievements Section --------->
     <section class="achievements">
         <div class="container">
             <p class="[ achievements__subtitle ] [ color-500 ]">
@@ -142,7 +142,7 @@
 
         </div>
     </section>
-    <!--------- About SECTION --------->
+    <!--------- About Section --------->
     <section class="about">
         <div class="row">
             <!-- about article -->
@@ -156,7 +156,7 @@
                     printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s, when an unknown
                 </article>
-                <button class="[ about__btn ] [ button ]" type="button">
+                <button class="[ about__btn button ]" type="button">
                     Learn More
                 </button>
             </div>
@@ -192,6 +192,85 @@
             </div>
         </div>
     </section>
+    <!--------- Guide Section --------->
+    <section class="guide">
+        <h2 class="[ guide__heading ] [ color-100 ]">How Do We Work Our System and Our Journey</h2>
+        <!-- How It Works - Step 01 -->
+        <div class="[ guide__step ] [ push-right ]">
+            <picture>
+                <source type="image/webp"
+                    srcset="./assets/images/background/guide-bg.webp 1x, ./assets/images/background/guide-bg@2x.webp 2x" />
+                <source type="image/png"
+                    srcset="./assets/images/background/guide-bg.png 1x, ./assets/images/background/guide-bg@2x.png 2x" />
+                <img class="guide__step__bg" src="./assets/images/background/guide-bg.png" alt="" />
+            </picture>
+            <span class="[ guide__step__number ] [ fw-700 ]">
+                01
+            </span>
+            <div class="guide__step__description">
+                <h3 class="color-100">Consulting</h3>
+                <p class="color-500 fs-300">
+                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                </p>
+            </div>
+            <svg class="[ guide__step__icon ] [ icon ] [ push-right ]">
+                <use href="./assets/images/icon/sprite.svg#connect"></use>
+            </svg>
+        </div>
+        <!-- How It Works - Step 02 -->
+        <div class="[ guide__step ] [ push-left ]">
+            <picture>
+                <source type="image/webp"
+                    srcset="./assets/images/background/guide-bg.webp 1x, ./assets/images/background/guide-bg@2x.webp 2x" />
+                <source type="image/png"
+                    srcset="./assets/images/background/guide-bg.png 1x, ./assets/images/background/guide-bg@2x.png 2x" />
+                <img class="guide__step__bg" src="./assets/images/background/guide-bg.png" alt="" />
+            </picture>
+            <span class="[ guide__step__number ] [ fw-700 ]">
+                02
+            </span>
+            <div class="guide__step__description">
+                <h3 class="color-100">Research & Complaince</h3>
+                <p class="color-500 fs-300">
+                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                </p>
+            </div>
+            <svg class="[ guide__step__icon ] [ icon ] [ push-left ]">
+                <use href="./assets/images/icon/sprite.svg#chart-cambo-stacked"></use>
+            </svg>
+        </div>
+        <!-- How It Works - Step 03 -->
+        <div class="[ guide__step ] [ push-right ]">
+            <picture>
+                <source type="image/webp"
+                    srcset="./assets/images/background/guide-bg.webp 1x, ./assets/images/background/guide-bg@2x.webp 2x" />
+                <source type="image/png"
+                    srcset="./assets/images/background/guide-bg.png 1x, ./assets/images/background/guide-bg@2x.png 2x" />
+                <img class="guide__step__bg" src="./assets/images/background/guide-bg.png" alt="" />
+            </picture>
+            <span class="[ guide__step__number ] [ fw-700 ]">
+                03
+            </span>
+            <div class="guide__step__description">
+                <h3 class="color-100">Technology</h3>
+                <p class="color-500 fs-300">
+                    A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s,
+                </p>
+            </div>
+            <svg class="[ guide__step__icon ] [ icon ] [ push-right ]">
+                <use href="./assets/images/icon/sprite.svg#tech"></use>
+            </svg>
+        </div>
+
+        <button type="button" class="[ guide__button button ]">
+            Let’s See More
+        </button>
+    </section>
+
+
 
     <script type="module" src="./index.js"></script>
 </body>
