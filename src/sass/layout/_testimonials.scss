@@ -1,0 +1,128 @@
+@use '../sass-utils/index' as *;
+
+.testimonials {
+    width: calc(100% - 2rem);
+    background: #071011;
+    padding-block: 60px 100px;
+    background-color: #091415;
+    background-image: url('./assets/images/background/testimonials-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border-radius: 0 200px 200px 0;
+    height: auto;
+
+    h2 {
+        text-align: center;
+    }
+
+    @include md {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+.reviews {
+    width: 100%;
+    background: rgba(0, 221, 156, 0.1);
+    padding: 9rem 2rem;
+    overflow: hidden;
+    border-radius: 200px;
+    margin-top: 8rem;
+    position: relative;
+
+    @include sm {
+        border-radius: 100px;
+        padding-inline: 1rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 80px;
+        opacity: 0;
+        transition: all 0.25s ease-in;
+
+        &.swiper-slide-active {
+            opacity: 1;
+        }
+
+        &__profile {
+            border-radius: 100%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 7px solid $color-primary;
+            opacity: 0.8;
+
+            @include sm {
+                width: 120px;
+                height: 120px;
+                border-size: 4px;
+            }
+        }
+
+        &__content {
+            max-width: 50rem;
+
+            @include sm {
+                width: 100%;
+                padding-inline: 5rem;
+            }
+        }
+
+        @include md {
+            flex-direction: column;
+            row-gap: 3rem;
+        }
+    }
+
+    &__quotation {
+        max-width: 15rem;
+        max-height: 15rem;
+        fill: #0B4137;
+        position: absolute;
+        right: 52%;
+        top: 7%;
+    }
+
+    &__button {
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        cursor: pointer;
+
+        .icon {
+            width: 100%;
+            height: 100%;
+            fill: $color-primary;
+        }
+
+        &[data-type="next"] {
+            right: 2rem;
+        }
+
+        &[data-type="prev"] {
+            transform: translateY(-50%) rotate(180deg);
+            left: 2rem;
+        }
+
+        @include sm {
+            width: 3rem;
+            height: 3rem;
+
+            &[data-type="next"] {
+                right: 0.5rem;
+            }
+
+            &[data-type="prev"] {
+                transform: translateY(-50%) rotate(180deg);
+                left: 0.5rem;
+            }
+        }
+    }
+}
