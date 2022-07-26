@@ -1,0 +1,19 @@
+@use '../sass-utils/' as *;
+
+.social-link {
+    display: flex;
+
+    .social-link__icon {
+        width: 48px;
+        height: 48px;
+        fill: $color-primary;
+        opacity: 0.3;
+        transition: all 0.2s ease-in-out;
+        border-radius: 100%;
+        
+        &:hover {
+            opacity: 1;
+            box-shadow: 0 0 10px -3px $color-primary;
+        }
+    }
+}

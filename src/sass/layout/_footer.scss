@@ -1,0 +1,94 @@
+@use '../sass-utils/' as *;
+
+.site-footer {
+    width: 100%;
+    background-color: rgba(#092326, 0.4);
+    padding-block: 112px;
+    margin-top: 10rem;
+
+    @include sm {
+        padding-block: 50px;
+    }
+
+    &__wrapper {
+        background-image: url('./assets/images/background/footer-bg.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        @include sm {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+            gap: 3rem;
+            background-position: top;
+        }
+    }
+
+    &__child {
+        padding-block: 3rem;
+
+        @include sm {
+            &:nth-child(4) {
+                grid-row: 3/ 4;
+            }
+        }
+    }
+
+    &__logo {
+        font-size: 3.4rem;
+
+        @include md {
+            font-size: 2rem;
+        }
+    }
+
+    &__content {
+        margin-top: 32px;
+        max-width: 45ch;
+        padding-right: 1rem;
+    }
+
+    .subscription-form {
+        margin-top: 3.5rem;
+    }
+
+    &__social {
+        margin-top: 2rem;
+        column-gap: 2rem;
+    }
+
+    &__copyright {
+        margin-top: 70px;
+    }
+
+    &__navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style: none;
+        column-gap: 2rem;
+
+        &__group {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+            list-style: none;
+        }
+
+        &__item a {
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                color: #fafafa;
+            }
+        }
+    }
+}
