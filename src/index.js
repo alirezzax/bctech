@@ -25,4 +25,10 @@ const swiper = new Swiper('.reviews', {
 })
 
 //  Initialize AOS
-AOS.init();
+AOS.init()
+
+// Page Loader
+const loaderContainer = document.querySelector('.loading')
+window.addEventListener('load', () => {
+  loaderContainer.classList.add('hide')
+})
