@@ -15,13 +15,13 @@
     <header class="site-header">
         <div class="row justify-space-between align-center">
             <!-- mobile navbar toggle button -->
-            <button class="navbar-toggle-btn">
+            <button class="navbar-toggle-btn" data-aos="fade-in" data-aos-delay="200">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <!-- site logo -->
-            <div class="[ site-header__logo ] [ color-100 ]">
+            <div class="[ site-header__logo ] [ color-100 ]" data-aos="fade-in">
                 B<span class="color-primary">.</span>CTech
             </div>
 
@@ -29,27 +29,32 @@
             <nav class="[ site-header__navbar ] [ display-flex align-center ]">
                 <ul class="[ navlist ] [ display-flex ] [ fs-300 fw-500 ]" role="list">
                     <li>
-                        <a class="[ navlist__item ] [ color-100 ]" href="#">About us</a>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#" data-aos="fade-in"
+                            data-aos-delay="200">About us</a>
                     </li>
                     <li>
-                        <a class="[ navlist__item ] [ color-100 ]" href="#">Services</a>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#" data-aos="fade-in"
+                            data-aos-delay="300">Services</a>
                     </li>
                     <li>
-                        <a class="[ navlist__item ] [ color-100 ]" href="#">How it works</a>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#" data-aos="fade-in" data-aos-delay="400">How
+                            it works</a>
                     </li>
                     <li>
-                        <a class="[ navlist__item ] [ color-100 ]" href="#">community</a>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#" data-aos="fade-in"
+                            data-aos-delay="500">community</a>
                     </li>
                     <li>
-                        <a class="[ navlist__item ] [ color-100 ]" href="#">About</a>
+                        <a class="[ navlist__item ] [ color-100 ]" href="#" data-aos="fade-in"
+                            data-aos-delay="600">About</a>
                     </li>
                 </ul>
             </nav>
             <!-- user area button  -->
-            <a class="[ site-header__button button ]" href="#">
+            <a class="[ site-header__button button ]" href="#" data-aos="fade-in" data-aos-delay="800">
                 Join for free
             </a>
-            <a class="site-header__icon-btn" href="#">
+            <a class="site-header__icon-btn" href="#" data-aos="fade-in" data-aos-delay="200">
                 <svg class="icon">
                     <use href="./assets/images/icon/sprite.svg#user"></use>
                 </svg>
@@ -61,9 +66,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <p class="[ hero__subtitle ] [ color-500 ]">Build the Future with</p>
-                    <h1 class="[ hero__title ] [ color-300 ]">Blockchain technology and Currency</h1>
-                    <button type="button" class="[ hero__cta button ]" data-type="cta">
+                    <p class="[ hero__subtitle ] [ color-500 ]" data-aos="zoom-out">Build the Future with</p>
+                    <h1 class="[ hero__title ] [ color-300 ]" data-aos="zoom-out" data-aos-delay="200">Blockchain
+                        technology and Currency</h1>
+                    <button type="button" class="[ hero__cta button ]" data-type="cta" data-aos="zoom-in"
+                        data-aos-anchor=".hero__title">
                         Get Whitepaper
                     </button>
                 </div>
@@ -72,7 +79,7 @@
                         <source type="image/webp"
                             srcset="./assets/images/city.webp 1x, ./assets/images/city@2x.webp 2x" />
                         <source type="image/png" srcset="./assets/images/city.png 1x, ./assets/images/city@2x.png 2x" />
-                        <img src="./assets/images/city.png" alt="" />
+                        <img src="./assets/images/city.png" alt="" data-aos="fade-left" />
                     </picture>
                 </div>
             </div>
@@ -81,23 +88,23 @@
     <!--------- Achievements Section --------->
     <section class="achievements">
         <div class="container">
-            <p class="[ achievements__subtitle ] [ color-500 ]">
+            <p class="[ achievements__subtitle ] [ color-500 ]" data-aos="zoom-in-down">
                 Achievements
             </p>
-            <h2 class="color-300">
+            <h2 class="color-300" data-aos="zoom-in-down" data-aos-delay="400">
                 Full Decentralised and Currency Security
             </h2>
             <!-- Achievements Stats -->
             <div class="[ achievements__stats ] [ display-flex justify-space-between ]">
-                <div class="achievements__stats__item">
+                <div class="achievements__stats__item" data-aos="flip-right" data-aos-delay="600">
                     <div class="[ achievements__stats__item__number ] [ color-primary fw-700 ]">1M+</div>
                     <div class="[ achievements__stats__item__caption ] [ color-700 fs-300 ]">Happy Users</div>
                 </div>
-                <div class="achievements__stats__item">
+                <div class="achievements__stats__item" data-aos="flip-right" data-aos-delay="800">
                     <div class="[ achievements__stats__item__number ] [ color-primary fw-700 ]">200K+</div>
                     <div class="[ achievements__stats__item__caption ] [ color-700 fs-300 ]">Community Assets</div>
                 </div>
-                <div class="achievements__stats__item">
+                <div class="achievements__stats__item" data-aos="flip-right" data-aos-delay="1000">
                     <div class="[ achievements__stats__item__number ] [ color-primary fw-700 ]">20K+</div>
                     <div class="[ achievements__stats__item__caption ] [ color-700 fs-300 ]">Build Community</div>
                 </div>
@@ -106,7 +113,8 @@
             <picture>
                 <source type="image/webp" srcset="./assets/images/world.webp 1x, ./assets/images/world@2x.webp 2x" />
                 <source type="image/png" srcset="./assets/images/world.png 1x, ./assets/images/world@2x.png 2x" />
-                <img class="achievements__picture" src="./assets/images/world.png" alt="" />
+                <img class="achievements__picture" src="./assets/images/world.png" alt="" data-aos="fade-up"
+                    data-aos-duration="1500" />
             </picture>
 
             <!-- blockchain associated companies -->
@@ -116,27 +124,31 @@
                         srcset="./assets/images/coinbase.webp 1x, ./assets/images/coinbase@2x.webp 2x" />
                     <source type="image/png"
                         srcset="./assets/images/coinbase.png 1x, ./assets/images/coinbase@2x.png 2x" />
-                    <img class="companies__picture" src="./assets/images/coinbase.png" alt="" />
+                    <img class="companies__picture" src="./assets/images/coinbase.png" alt="" data-aos="zoom-out"
+                        data-aos-delay="100" />
                 </picture>
                 <picture>
                     <source type="image/webp"
                         srcset="./assets/images/blockchain.webp 1x, ./assets/images/blockchain@2x.webp 2x" />
                     <source type="image/png"
                         srcset="./assets/images/blockchain.png 1x, ./assets/images/blockchain@2x.png 2x" />
-                    <img class="companies__picture" src="./assets/images/blockchain.png" alt="" />
+                    <img class="companies__picture" src="./assets/images/blockchain.png" alt="" data-aos="zoom-out"
+                        data-aos-delay="300" />
                 </picture>
                 <picture>
                     <source type="image/webp"
                         srcset="./assets/images/binance.webp 1x, ./assets/images/binance@2x.webp 2x" />
                     <source type="image/png"
                         srcset="./assets/images/binance.png 1x, ./assets/images/binance@2x.png 2x" />
-                    <img class="companies__picture" src="./assets/images/binance.png" alt="" />
+                    <img class="companies__picture" src="./assets/images/binance.png" alt="" data-aos="zoom-out"
+                        data-aos-delay="500" />
                 </picture>
                 <picture>
                     <source type="image/webp"
                         srcset="./assets/images/bitmex.webp 1x, ./assets/images/bitmex@2x.webp 2x" />
                     <source type="image/png" srcset="./assets/images/bitmex.png 1x, ./assets/images/bitmex@2x.png 2x" />
-                    <img class="companies__picture" src="./assets/images/bitmex.png" alt="" />
+                    <img class="companies__picture" src="./assets/images/bitmex.png" alt="" data-aos="zoom-out"
+                        data-aos-delay="700" />
                 </picture>
             </div>
 
@@ -147,8 +159,8 @@
         <div class="row">
             <!-- about article -->
             <div class="col-lg-6 col-md-12">
-                <h2 class="color-300">About Us</h2>
-                <article class="[ about__article ] [ color-500 ]">
+                <h2 class="color-300" data-aos="fade-right">About Us</h2>
+                <article class="[ about__article ] [ color-500 ]" data-aos="fade-right" data-aos-delay="200">
                     A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                     been the industry's standard dummy text ever since the 1500s, when an unknown
                     <br>
@@ -156,13 +168,13 @@
                     printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s, when an unknown
                 </article>
-                <button class="[ about__btn button ]" type="button">
+                <button class="[ about__btn button ]" type="button" data-aos="zoom-in" data-aos-delay="300">
                     Learn More
                 </button>
             </div>
             <!-- features -->
             <div class="col-lg-6 col-md-12">
-                <div class="features">
+                <div class="features" data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">
                     <div class="features__item" data-type="marketplace">
                         <svg class="[ features__item__icon ] [ icon ]">
                             <use href="./assets/images/icon/sprite.svg#marketplace"></use>
@@ -194,7 +206,8 @@
     </section>
     <!--------- Guide Section --------->
     <section class="guide">
-        <h2 class="[ guide__heading ] [ color-100 ]">How Do We Work Our System and Our Journey</h2>
+        <h2 class="[ guide__heading ] [ color-100 ]" data-aos="zoom-in-down">How Do We Work Our System and Our Journey
+        </h2>
         <!-- How It Works - Step 01 -->
         <div class="[ guide__step ] [ push-right ]">
             <picture>
@@ -204,12 +217,12 @@
                     srcset="./assets/images/background/guide-bg.png 1x, ./assets/images/background/guide-bg@2x.png 2x" />
                 <img class="guide__step__bg" src="./assets/images/background/guide-bg.png" alt="" />
             </picture>
-            <span class="[ guide__step__number ] [ fw-700 ]">
+            <span class="[ guide__step__number ] [ fw-700 ]" data-aos="fade-right" data-aos-delay="100">
                 01
             </span>
             <div class="guide__step__description">
-                <h3 class="color-100">Consulting</h3>
-                <p class="color-500 fs-300">
+                <h3 class="color-100" data-aos="fade-down" data-aos-delay="200">Consulting</h3>
+                <p class="color-500 fs-300" data-aos="fade-up" data-aos-delay="300">
                     A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                     the industry's standard dummy text ever since the 1500s,
                 </p>
@@ -227,12 +240,12 @@
                     srcset="./assets/images/background/guide-bg.png 1x, ./assets/images/background/guide-bg@2x.png 2x" />
                 <img class="guide__step__bg" src="./assets/images/background/guide-bg.png" alt="" />
             </picture>
-            <span class="[ guide__step__number ] [ fw-700 ]">
+            <span class="[ guide__step__number ] [ fw-700 ]" data-aos="fade-left" data-aos-delay="100">
                 02
             </span>
             <div class="guide__step__description">
-                <h3 class="color-100">Research & Complaince</h3>
-                <p class="color-500 fs-300">
+                <h3 class="color-100" data-aos="fade-down" data-aos-delay="200">Research & Complaince</h3>
+                <p class="color-500 fs-300" data-aos="fade-up" data-aos-delay="300">
                     A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                     the industry's standard dummy text ever since the 1500s,
                 </p>
@@ -250,12 +263,12 @@
                     srcset="./assets/images/background/guide-bg.png 1x, ./assets/images/background/guide-bg@2x.png 2x" />
                 <img class="guide__step__bg" src="./assets/images/background/guide-bg.png" alt="" />
             </picture>
-            <span class="[ guide__step__number ] [ fw-700 ]">
+            <span class="[ guide__step__number ] [ fw-700 ]" data-aos="fade-right" data-aos-delay="100">
                 03
             </span>
             <div class="guide__step__description">
-                <h3 class="color-100">Technology</h3>
-                <p class="color-500 fs-300">
+                <h3 class="color-100" data-aos="fade-down" data-aos-delay="200">Technology</h3>
+                <p class="color-500 fs-300" data-aos="fade-up" data-aos-delay="300">
                     A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                     the industry's standard dummy text ever since the 1500s,
                 </p>
@@ -265,7 +278,7 @@
             </svg>
         </div>
 
-        <button type="button" class="[ guide__button button ]">
+        <button type="button" class="[ guide__button button ]" data-aos="fade-in">
             Let’s See More
         </button>
     </section>
@@ -273,7 +286,7 @@
     <!--------- testimonials Section --------->
     <section class="testimonials">
         <div class="container">
-            <h2 class="color-100">Our community with User reviews</h2>
+            <h2 class="color-100" data-aos="zoom-in-down">Our community with User reviews</h2>
 
             <!-- Reviews Slider -->
             <div class="reviews">
@@ -284,9 +297,9 @@
                             <source type="image/png"
                                 srcset="./assets/images/profile-01.jpg 1x, ./assets/images/profile-01@2x.jpg 2x">
                             <img class="reviews__item__profile" src="./assets/images/profile-01.jpg"
-                                alt="Dake M. Chile, Business Owner of Bellie">
+                                alt="Dake M. Chile, Business Owner of Bellie" data-aos="zoom-in">
                         </picture>
-                        <p class="[ reviews__item__content ] [ color-500 fs-300 fw-500 ]">
+                        <p class="[ reviews__item__content ] [ color-500 fs-300 fw-500 ]" data-aos="zoom-in">
                             A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been the industry's standard dummy text ever since the 1500s, when an unknown
                             <br>
@@ -371,17 +384,17 @@
     <footer class="site-footer">
         <div class="[ site-footer__wrapper ] [ container ]">
             <div class="site-footer__child">
-                <div class="[ site-footer__logo ] [ color-100 ]">
+                <div class="[ site-footer__logo ] [ color-100 ]" data-aos="fade-in" data-aos-delay="150">
                     B<span class="color-primary">.</span>CTech
                 </div>
-                <p class="[ site-footer__content ] [ color-500 fs-300 ]">
+                <p class="[ site-footer__content ] [ color-500 fs-300 ]" data-aos="fade-in" data-aos-delay="150">
                     A Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                     the industry's standard dummy text ever since the 1500s, when an unknown
                 </p>
             </div>
             <div class="site-footer__child">
-                <h3 class="color-300 fw-500">newsletter</h3>
-                <form class="[ subscription-form ] [ display-flex ]">
+                <h3 class="color-300 fw-500" data-aos="fade-in" data-aos-delay="150">newsletter</h3>
+                <form class="[ subscription-form ] [ display-flex ]" data-aos="fade-in" data-aos-delay="150">
                     <input class="[ subscription-form__input ] [ fs-300 fw-500 ]" placeholder="Email Address"
                         type="email" name="email">
                     <!--
@@ -394,48 +407,55 @@
                 </form>
             </div>
             <div class="site-footer__child">
-                <h3 class="color-300 fw-500">Social Media</h3>
+                <h3 class="color-300 fw-500" data-aos="fade-in" data-aos-delay="150">Social Media</h3>
                 <div class="[ site-footer__social ] [ display-flex ]">
-                    <a href="#" class="social-link">
+                    <a href="#" class="social-link" data-aos="zoom-out" data-aos-delay="300">
                         <svg class="social-link__icon icon">
                             <use href="./assets/images/icon/sprite.svg#facebook"></use>
                         </svg>
                     </a>
-                    <a href="#" class="social-link">
+                    <a href="#" class="social-link" data-aos="zoom-out" data-aos-delay="600">
                         <svg class="social-link__icon icon">
                             <use href="./assets/images/icon/sprite.svg#twitter"></use>
                         </svg>
                     </a>
-                    <a href="#" class="social-link">
+                    <a href="#" class="social-link" data-aos="zoom-out" data-aos-delay="700">
                         <svg class="social-link__icon icon">
                             <use href="./assets/images/icon/sprite.svg#instagram"></use>
                         </svg>
                     </a>
                 </div>
-                <p class="[ site-footer__copyright ] [ fs-400 color-500 ]">All rights reserved@2022</p>
+                <p class="[ site-footer__copyright ] [ fs-400 color-500 ]" data-aos="zoom-in" data-aos-offset="0">All
+                    rights reserved@2022</p>
             </div>
             <div class="site-footer__child ">
                 <ul class="site-footer__navigation">
                     <li class="site-footer__navigation__group">
-                        <h3 class="color-300 fw-500">About Us</h3>
+                        <h3 class="color-300 fw-500" data-aos="zoom-in">About Us</h3>
                         <ul class="site-footer__navigation__list">
-                            <li class="site-footer__navigation__item"><a class="color-500 fs-400"
-                                    href="#">Whitepaper</a></li>
-                            <li class="site-footer__navigation__item"><a class="color-500 fs-400" href="#">Blog</a></li>
-                            <li class="site-footer__navigation__item"><a class="color-500 fs-400" href="#">Activity</a>
+                            <li class="site-footer__navigation__item" data-aos="zoom-out" data-aos-delay="300"><a
+                                    class="color-500 fs-400" href="#">Whitepaper</a></li>
+                            <li class="site-footer__navigation__item" data-aos="zoom-out" data-aos-delay="500"><a
+                                    class="color-500 fs-400" href="#">Blog</a></li>
+                            <li class="site-footer__navigation__item" data-aos="zoom-out" data-aos-delay="700"><a
+                                    class="color-500 fs-400" href="#">Activity</a>
                             </li>
                         </ul>
                     </li>
                     <li class="site-footer__navigation__group">
-                        <h3 class="color-300 fw-500">Support</h3>
+                        <h3 class="color-300 fw-500" data-aos="zoom-in">Support</h3>
                         <ul class="site-footer__navigation__list">
-                            <li class="site-footer__navigation__item"><a class="color-500 fs-400" href="#">Help &
+                            <li class="site-footer__navigation__item" data-aos="zoom-out" data-aos-delay="300"><a
+                                    class="color-500 fs-400" href="#">Help &
                                     Support</a></li>
-                            <li class="site-footer__navigation__item"><a class="color-500 fs-400" href="#">Community</a>
+                            <li class="site-footer__navigation__item" data-aos="zoom-out" data-aos-delay="500"><a
+                                    class="color-500 fs-400" href="#">Community</a>
                             </li>
-                            <li class="site-footer__navigation__item"><a class="color-500 fs-400" href="#">Author
+                            <li class="site-footer__navigation__item" data-aos="zoom-out" data-aos-delay="700"><a
+                                    class="color-500 fs-400" href="#">Author
                                     Profile</a></li>
-                            <li class="site-footer__navigation__item"><a class="color-500 fs-400" href="#">Contact</a>
+                            <li class="site-footer__navigation__item" data-aos="zoom-out" data-aos-delay="900"><a
+                                    class="color-500 fs-400" href="#">Contact</a>
                             </li>
                         </ul>
                     </li>

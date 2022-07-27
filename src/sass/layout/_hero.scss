@@ -11,6 +11,7 @@
             min-height: 100vh;
         }
     }
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -49,7 +50,7 @@
             position: absolute;
             bottom: 20px;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) translateZ(0) scale(1) !important;
         }
     }
 }

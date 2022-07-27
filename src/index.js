@@ -1,6 +1,9 @@
 // import Swiper
 import Swiper from 'swiper/swiper-bundle'
 
+// import AOS
+import AOS from 'aos';
+
 // responsive header navbar
 const toggleBtn = document.querySelector('.navbar-toggle-btn')
 const navbar = document.querySelector('.site-header__navbar')
@@ -20,3 +23,6 @@ const swiper = new Swiper('.reviews', {
     prevEl: '.reviews__button[data-type="prev"]',
   },
 })
+
+//  Initialize AOS
+AOS.init();
