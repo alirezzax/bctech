@@ -21,7 +21,7 @@
     border: 1px solid transparent;
     outline: 1px solid rgba($color-primary, .5);
     outline-offset: 0px;
-    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1) !important;
     letter-spacing: 0.05em;
 
     @include sm {
