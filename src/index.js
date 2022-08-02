@@ -2,15 +2,15 @@
 import Swiper from 'swiper/swiper-bundle'
 
 // import AOS
-import AOS from 'aos';
+import AOS from 'aos'
 
 // responsive header navbar
 const toggleBtn = document.querySelector('.navbar-toggle-btn')
 const navbar = document.querySelector('.site-header__navbar')
 
 toggleBtn.addEventListener('click', (e) => {
-    e.currentTarget.classList.toggle('close')
-    navbar.classList.toggle('open')
+  e.currentTarget.classList.toggle('close')
+  navbar.classList.toggle('open')
 })
 
 //  Initialize Swiper
@@ -29,8 +29,8 @@ AOS.init()
 
 // Page Loader
 const loaderContainer = document.querySelector('.loading')
+const body = document.querySelector('body')
 window.addEventListener('load', () => {
-  setTimeout(() => {
-    loaderContainer.classList.add('hide')
-  },2000)
+  body.classList.remove('body-no-scroll')
+  loaderContainer.classList.add('hide')
 })
