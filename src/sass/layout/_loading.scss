@@ -6,13 +6,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     background: #0a0a0a;
     z-index: 999999999;
     overflow: hidden;
+    inset: 0;
+    transition: all 0.5s ease-in;
 
     &.hide {
-        display: none;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
     }
     
     @keyframes spin-anim {

@@ -30,5 +30,7 @@ AOS.init()
 // Page Loader
 const loaderContainer = document.querySelector('.loading')
 window.addEventListener('load', () => {
-  loaderContainer.classList.add('hide')
+  setTimeout(() => {
+    loaderContainer.classList.add('hide')
+  },2000)
 })
