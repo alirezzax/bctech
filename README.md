@@ -5,42 +5,97 @@
 
 <p align="center">
   
-[<img alt="" src="https://user-images.githubusercontent.com/99601503/182960111-6e43f825-df71-42d7-832f-2198190f41a6.png" />](https://bctech.netlify.app)
+[<img alt="blockchain landingpage" src="https://user-images.githubusercontent.com/99601503/182960111-6e43f825-df71-42d7-832f-2198190f41a6.png" />](https://bctech.netlify.app)
 </p>
 <br />
 <b>BC.Tech</b> – is a clean, mordern and fully responsive blockchain landing page With its user-friendly interface
 <br />
 
 ### Features
-:low_brightness: Fully responsive (compatible with major browsers, tablets and phones)
+:heavy_check_mark: Fully responsive (compatible with major browsers, tablets and phones)
 <br />
-:low_brightness: W3C valid HTML
+:heavy_check_mark: W3C valid HTML
 <br />
-:low_brightness: Cross-browser compatible
+:heavy_check_mark: Cross-browser compatible
 <br />
-:low_brightness: Light-Weight code
+:heavy_check_mark: Light-Weight code
 <br />
-:low_brightness: Organized and well structure code
+:heavy_check_mark: Organized and well structure code
 <br />
-:low_brightness: Easy to customize with SASS variables and CSS utility classes
+:heavy_check_mark: Easy to customize with SASS variables and CSS utility classes
 <br />
 
 
-### [Demo](https://bctech.netlify.app) :desktop_computer:
+### Demo :desktop_computer:
 Online Deployment of this project is available at: [bctech.netlify.app](https://bctech.netlify.app)
 
-### Languages and Tools
-[<img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[<img alt="css3" src="https://img.shields.io/badge/-CSS3-258cc4?style=flat&logo=css3&logoColor=white" />](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[<img alt="javascript" src="https://img.shields.io/badge/-JavaScript-efd100?style=flat&logo=javascript&logoColor=2a2f26" />](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[<img alt="SASS" src="https://img.shields.io/badge/-SASS-CC6699?style=flat&logo=sass&logoColor=white" />](https://sass-lang.com)
-[<img alt="Parcel" src="https://img.shields.io/badge/-Parcel-f87171?style=flat" />](https://parceljs.org)
-[<img alt="Swiper" src="https://img.shields.io/badge/-Swiper-0080ff?style=flat&logo=Swiper&logoColor=19243a" />](https://swiperjs.com)
-[<img alt="Animation On Scroll" src="https://img.shields.io/badge/-AOS-2e355d?style=flat" />](https://github.com/michalsnik/aos)
+### Technologies
 
-<hr />
+[![HTML](https://user-images.githubusercontent.com/99601503/183393181-a57682c8-fe86-4ca1-b5e7-15d12089f5c9.png)](https://developer.mozilla.org/en-US/docs/Web/HTML)&nbsp;
+[![CSS](https://user-images.githubusercontent.com/99601503/183393195-e6ec478a-ba67-40bb-b9ff-b7550293c1cd.png)](https://developer.mozilla.org/en-US/docs/Web/CSS)&nbsp;
+[![SASS](https://user-images.githubusercontent.com/99601503/183393251-0e35221c-3483-4176-85aa-4132fb226b21.png)](https://sass-lang.com)&nbsp;
+[![JavaScript](https://user-images.githubusercontent.com/99601503/183393237-0e408212-0198-4132-a286-a874dca22501.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)&nbsp;
+<br />
 
-## How To Use :gear:
-### Prerequisites
-You need to install Git and Node.js in your System. <br />
-You might have These already, but if not, get the Latest LTS Version of Node.js from [nodejs.org](https://nodejs.org) and latest release of Git from [git-scm.com](https://git-scm.com).
+## Getting Started :gear:
+
+### :small_orange_diamond: Prerequisites
+You'll need to install Git and Node.js(includes npm) in your System. You might have These already, but if not, get the Latest LTS Version of Node.js from [nodejs.org](https://nodejs.org) and latest release of Git from [git-scm.com](https://git-scm.com).
+
+### :small_orange_diamond: Installation
+
+1. Clone the repository
+```bash
+$ git clone https://github.com/alirezzax/bctech.git
+```
+2. Move into the repository
+```bash
+$ cd bctech
+```
+
+3. Install dependencies
+```bash
+$ npm install
+```
+
+### :small_orange_diamond: Usage
+<h4>Development mode</h4>
+
+```bash
+$ npm run dev
+```
+> You can run this code to start the local server for development and testing purposes. Once your server has started, go to this url `http://localhost:1234/` to view it in your browser.
+
+
+<h4>Production mode</h4>
+
+```bash
+$ npm run build
+```
+>  You can run this code to build your project for production to the `dist` folder. It automatically bundles and optimizes your application for production.
+
+## Contributing :pushpin:
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Authors :bulb:
+
+- **Alireza Khoshniyat** - [https://github.com/alirezzax](https://github.com/alirezzax)
+
+
+## License :scroll:
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+
+
+
+
+
