@@ -10,6 +10,9 @@
 <br />
 <b>BC.Tech</b> – is a clean, mordern and fully responsive blockchain landing page With its user-friendly interface
 <br />
+<br />
+
+> Designed by [Taqwah](https://dribbble.com/shots/18412826-Blockchain-Technology-And-Currency-Exchange-Landing-Page) 
 
 ### Features
 ✔️ Fully responsive (compatible with major browsers, tablets and phones)
