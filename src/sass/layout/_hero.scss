@@ -6,11 +6,7 @@
     background-repeat: no-repeat;
     position: relative;
     padding-block: 300px 100px;
-    @media screen and (min-width: 1024px) {
-        & {
-            min-height: 100vh;
-        }
-    }
+    min-height: 100vh;
     overflow: hidden;
 
     &::before {
@@ -48,7 +44,7 @@
         }
         &__cta {
             position: absolute;
-            bottom: 20px;
+            bottom: 90px;
             left: 50%;
             transform: translateX(-50%) translateZ(0) scale(1) !important;
         }
