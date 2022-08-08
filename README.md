@@ -39,10 +39,10 @@ Online Deployment of this project is available at: [bctech.netlify.app](https://
 
 ## Getting Started :gear:
 
-### :small_orange_diamond: Prerequisites
+### Prerequisites
 You'll need to install Git and Node.js(includes npm) in your System. You might have These already, but if not, get the Latest LTS Version of Node.js from [nodejs.org](https://nodejs.org) and latest release of Git from [git-scm.com](https://git-scm.com).
 
-### :small_orange_diamond: Installation
+### Installation
 
 1. Clone the repository
 ```bash
@@ -58,7 +58,7 @@ $ cd bctech
 $ npm install
 ```
 
-### :small_orange_diamond: Usage
+### Usage
 <h4>Development mode</h4>
 
 ```bash
