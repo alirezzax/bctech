@@ -12,7 +12,7 @@
 <br />
 <br />
 
-> Designed by [Taqwah](https://dribbble.com/shots/18412826-Blockchain-Technology-And-Currency-Exchange-Landing-Page) 
+> Designed by [Taqwah](https://taqwah.digital) 
 
 ### Features
 ✔️ Fully responsive (compatible with major browsers, tablets and phones)
